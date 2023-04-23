@@ -1,0 +1,137 @@
+@import './base.css';
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: normal;
+  height: 100vh;
+  place-items: center;
+  overflow: hidden;
+}
+#content {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width:100vw;
+  padding: 2rem;
+}
+a {
+  display: inline-block; 
+  text-decoration: none;
+}
+h1 {
+  font-size:4rem;
+}
+p {
+  font-size:1.5rem;
+}
+span {
+  font-size:1.5rem;
+}
+.klammer {
+  font-size:2.5rem;
+  font-weight:50;
+}
+.text a:hover{
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  background-color: transparent;
+  z-index:4;
+} 
+.picture a:hover {
+  color: hsla(160, 100%, 37%, 1);
+  background-color: hsla(160, 100%, 37%, 1);
+  filter:blur(500px);
+}
+.picture {
+  margin:20px;  
+  border-radius:20px;
+  transition:all 800ms;
+}
+main {
+  display: flex;
+  margin-bottom:500px;
+}
+.wrapper {
+  z-index:4;
+  padding: 6rem 8rem;
+  border-radius: 14px;
+  border:2px solid rgb(0, 0, 0);
+} 
+#blur {
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:2;
+  backdrop-filter:blur(200px);  
+}
+.text {
+  color:black;
+  z-index:4;
+  font-family: 'Fira Code', monospace;
+}
+
+#spotLight {
+  z-index:3;
+  height:330px;
+  aspect-ratio: 1;
+  position:absolute;
+  margin:0px!important;
+  left:50%;
+  top:50%;
+  border-radius:50%;
+  background:linear-gradient(
+    to right,
+    white,
+    ivory
+  );
+  animation: rotate 20s infinite;
+  filter: blur(200px);
+}
+#lightSwitch {
+  border: 1px solid black;
+  background:transparent;
+  border: none;
+  padding:1rem;
+  color:black;
+  filter:blur(1px);
+  box-shadow: 1px 2px 1px black;
+}
+#switchContainer {
+  border: 1px solid black;
+  padding:2px;
+  display: inline flex;
+  margin-top:1rem;
+}
+.p-1 {
+  padding:0rem 1rem;
+}
+.coilGlow {
+  color: orange !important;
+  filter:blur(5px) !important;
+}
+.links {
+  transition: all 300ms;
+}
+@keyframes rotate {
+  from { rotate: 0deg; }
+  to { rotate: 360deg; }
+}
+@import url('https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css');
+  html, body {
+    font-family: 'Fira Code', monospace;
+  }
+  #app {
+    font-family: 'Roboto', sans-serif;
+  }
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+@media (min-width: 1024px) {
+
+}
