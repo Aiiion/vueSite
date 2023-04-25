@@ -1,8 +1,7 @@
 <script setup>
 
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import Lamp from './components/Lamp.vue'
-
 
 addEventListener('DOMContentLoaded', (e) => {
   const bulb = document.getElementById('bulb');
@@ -83,28 +82,19 @@ addEventListener('DOMContentLoaded', (e) => {
   })
 
 });
-
-
-
 </script>
 
 <template>
   <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
   </header> -->
   <div id="content">
     
     <div class="main">
-      <Lamp lightsOn=false />
+      <Lamp />
       <div class="wrapper">
         <h1 class="text">
           Alex Bierhance
@@ -134,16 +124,12 @@ addEventListener('DOMContentLoaded', (e) => {
         </div>
       
       </div>
-
-      
+  
       <div id="switchContainer" class="text">
         <button class="text" id="lightSwitch"></button>
       </div>
       
-
-      
     </div>
-    
     
   </div>
   <div id="spotLight"></div>
