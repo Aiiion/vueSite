@@ -1,13 +1,10 @@
 <script setup>
-defineProps({
-  lightsOn: {
-    type: Boolean,
-    required: true
-  }
-})
-// export default {
-//   name: 'troll',
-// }
+// defineProps({
+//   lightsOn: {
+//     type: Boolean,
+//     required: true
+//   }
+// })
 </script>
 
 <template>
