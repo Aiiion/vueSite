@@ -7,6 +7,7 @@ addEventListener('DOMContentLoaded', (e) => {
   if(window.navigator.userAgent.indexOf("Edg") > -1) {
     alert("Microsoft Edge might not support this site, please switch browser if you are expericing issues.")
   }
+  document.getElementById('lightSwitch').click()
   const bulb = document.getElementById('bulb');
   const light = document.getElementById('light');
   const coil = document.getElementById('coil');
@@ -83,7 +84,9 @@ addEventListener('DOMContentLoaded', (e) => {
       pictureLinks.forEach(picture => picture.classList.remove('p-1'));
     }
   })
-
+  if (/Android|iPhone/i.test(navigator.userAgent)) {
+    document.getElementById('lightSwitch').click()
+  }
 });
 </script>
 
